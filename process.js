@@ -5,7 +5,7 @@ exports.data = function(cb) {
 		procs : []
 	};
 
-	exec("ps aux", function(err, stdout, stderr) {
+	exec("ps aux", function(err, stdout) {
 		if (!err) {
 			var procsinfo = stdout.split(/[\r\n]{1,2}/);
 			delete procsinfo[0];
