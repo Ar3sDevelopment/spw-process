@@ -49,5 +49,5 @@ script(type="text/javascript").
 	}
 
 	function updateProcessGrid() {
-		$.startUpdatingWidgetJson(socket, #{user_widget.id}, '#{sid}', callbackUpdateProcessGrid, null);
+		$.startUpdatingWidgetJson(socket, #{user_widget.id}, '#{username}', callbackUpdateProcessGrid, null);
 	}
